@@ -38,6 +38,7 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;        /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int user_bh            = 0;        /* 0 means that dwm will calculate bar height, >= 1 means dwm will user_bh as bar height */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
@@ -45,10 +46,16 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+static const char my_normal_bgc[]   = "#2d3560";
+static const char my_normal_fgc[]   = "#b0b0b0";
+static const char my_normal_brd[]   = "#404040";
+static const char my_selected_bgc[] = "#2d3560";
+static const char my_selected_fgc[] = "#ffffff";
+static const char my_selected_brd[] = "#2d3560";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeNorm] = { my_normal_fgc, my_normal_bgc, my_normal_brd },
+	[SchemeSel]  = { my_selected_fgc, my_selected_bgc, my_selected_brd  },
 };
 
 /* tagging */
