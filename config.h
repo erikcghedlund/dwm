@@ -98,6 +98,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
 static const char *webbrowsercmd[]  = { "waterfox-g", NULL };
 static const char *filebrowsercmd[]  = { "pcmanfm", NULL };
+static const char *launchercmd[]  = { "synapse", NULL };
 static const char *musiccmd[]  = { "/home/erik/.local/bin/spotify-hack.sh", NULL };
 static const char *screenshotcmd[]  = { "/home/erik/.local/bin/screenshot.sh", NULL };
 
@@ -110,6 +111,7 @@ static const Key keys[] = {
 	{ ControlMask|AltMask,          XK_h,      spawn,          {.v = filebrowsercmd } },
 	{ ControlMask|AltMask,          XK_m,      spawn,          {.v = musiccmd } },
     { MODKEY,                       XK_x,      spawn,          {.v = screenshotcmd} },
+    { MODKEY,                       XK_s,      spawn,          {.v = launchercmd} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_Tab,    focusstack,     {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_Tab,    focusstack,     {.i = -1 } },
