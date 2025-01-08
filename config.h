@@ -96,6 +96,7 @@ static const Layout layouts[] = {
 /* commands */
 static const char *termcmd[]  = { "kitty", NULL };
 static const char *discordcmd[]  = { "discord", NULL };
+static const char *mattermostcmd[]  = { "mattermost-desktop", NULL };
 static const char *webbrowsercmd[]  = { "waterfox-g", NULL };
 static const char *filebrowsercmd[]  = { "pcmanfm", NULL };
 static const char *launchercmd[]  = { "synapse", NULL };
@@ -107,6 +108,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ ControlMask|AltMask,          XK_t,      spawn,          {.v = termcmd } },
 	{ ControlMask|AltMask,          XK_d,      spawn,          {.v = discordcmd } },
+	{ ControlMask|AltMask,          XK_s,      spawn,          {.v = mattermostcmd } },
 	{ ControlMask|AltMask,          XK_w,      spawn,          {.v = webbrowsercmd } },
 	{ ControlMask|AltMask,          XK_h,      spawn,          {.v = filebrowsercmd } },
 	{ ControlMask|AltMask,          XK_m,      spawn,          {.v = musiccmd } },
