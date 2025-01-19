@@ -100,7 +100,7 @@ static const char *mattermostcmd[]  = { "mattermost-desktop", NULL };
 static const char *webbrowsercmd[]  = { "waterfox-g", NULL };
 static const char *filebrowsercmd[]  = { "pcmanfm", NULL };
 static const char *launchercmd[]  = { "synapse", NULL };
-static const char *musiccmd[]  = { "/home/erik/.local/bin/spotify-hack.sh", NULL };
+static const char *musiccmd[]  = { "/home/erik/.local/bin/dwm_spotify_player.sh", NULL };
 static const char *screenshotcmd[]  = { "/home/erik/.local/bin/screenshot.sh", NULL };
 
 static const Key keys[] = {
